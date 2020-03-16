@@ -1,7 +1,7 @@
 const express = require('express');     // just like the import express from ''express'
 const app = express();
 
-// route handler
+// route handlerher
 // "/" watch requests trying to access
 // get => GET INFO
 // req => request (object representing the incoming request)
