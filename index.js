@@ -7,7 +7,7 @@ const app = express();
 // req => request (object representing the incoming request)
 // res => Object representing the outgoing response
 app.get('/', (req, res) =>{
-    res.send({hi: 'there'});
+    res.send({bye: 'buddy'});
 });
 // Dynamic port binding
 const PORT = process.env.PORT || 5000;
