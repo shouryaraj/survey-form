@@ -25,7 +25,8 @@ passport.deserializeUser((id, done) => {
 passport.use(new GoogleStrategy({
     clientID: keys.googleClientID,
     clientSecret: keys.googleClientSecret,
-    callbackURL: '/auth/google/callback' //coming back from auth
+    callbackURL: '/auth/google/callback', //coming back from auth]
+    proxy: true // Give an order to google you can trust any proxy
     // done means that we are done with our callback 
     }, (accessToken, refreshToken, profile, done)=> {
         // searching for existing user in the Database
